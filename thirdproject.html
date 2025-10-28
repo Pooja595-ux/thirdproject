@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="quiz-box">
+      <h2>🧠 Quick Quiz</h2>
+      <p>What does CSS stand for?</p>
+      <div class="options">
+        <button class="btn" onclick="checkAnswer('wrong')">Creative Style Sheets</button>
+        <button class="btn" onclick="checkAnswer('correct')">Cascading Style Sheets</button>
+        <button class="btn" onclick="checkAnswer('wrong')">Colorful Style Sheets</button>
+      </div>
+      <p id="quiz-result"></p>
+    </div>
+
+    <div class="joke-box">
+      <h2>😂 Random Joke Generator</h2>
+      <p>Click below to fetch a random joke using a public API.</p>
+      <button class="btn" onclick="getJoke()">Get a Joke</button>
+      <p id="joke"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
